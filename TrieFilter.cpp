@@ -58,7 +58,7 @@ void Trie::insert(const std::string &str) {
     }
 }
 
-bool Trie::search(const std::string &str) {
+bool Trie::check_str(const std::string &str) {
     std::wstring_convert<std::codecvt_utf8_utf16<char16_t> , char16_t> cvt;
     std::u16string word = cvt.from_bytes(str);
 

@@ -1,3 +1,6 @@
+#ifndef __TrieFilter_H__
+#define __TrieFilter_H__
+
 #include <stdlib.h>
 #include <stdint.h>
 #include <string>
@@ -31,7 +34,7 @@ public:
 
     void load_from_file(const std::string &file_name);
     void insert(const std::string &word);
-    bool search(const std::string &word);
+    bool check_str(const std::string &word);
 
 private:
     TrieNode* root;
@@ -51,3 +54,5 @@ static inline std::string trim(const std::string& str)
 	}
 	return retStr;
 }
+
+#endif
